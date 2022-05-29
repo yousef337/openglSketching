@@ -38,6 +38,7 @@ int main(void){
         std::cout << glGetString(GL_VERSION) << std::endl;
     }
 
+    /*
     float positoins[] = {
         0.0f, 0.0f,
         -0.5f, 0.0f,
@@ -47,6 +48,18 @@ int main(void){
         -0.5f, -0.5f,
         -0.5f, 0.0f,
     };
+    */
+
+    float positoins[] = {
+        0.0f, 0.0f,
+        -0.5f, 0.0f,
+        0.0f, -0.5f,
+        -0.5f, -0.5f,
+    };
+
+    unsigned int indexedPositions[] = {
+        0, 1, 2, 2, 3, 1
+    };
 
     unsigned int buffer;
     glGenBuffers(1, &buffer);
@@ -55,6 +68,12 @@ int main(void){
 
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), 0);
     glEnableVertexAttribArray(0);
+
+    unsigned int indexedBuffer;
+    glGenBuffers(1, &indexedBuffer);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexedBuffer);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexedPositions), indexedPositions, GL_STATIC_DRAW);
+
 
     ShaderProgram basic = ShaderProgram();
     basic.addShader(GL_VERTEX_SHADER, fileReader("../res/shaders/vertex/basicPosition.shader"));
@@ -69,8 +88,8 @@ int main(void){
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 6);
-
+        //glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 
 
         /* Swap front and back buffers */
