@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/opengla.dir/main.cpp.o -o opengla 
