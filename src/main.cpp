@@ -38,10 +38,14 @@ int main(void){
         std::cout << glGetString(GL_VERSION) << std::endl;
     }
 
-    float positoins[6] = {
-        -0.5f,0.0f,
-        0.5f,1.0f,
-        0.0f,-0.5f
+    float positoins[] = {
+        0.0f, 0.0f,
+        -0.5f, 0.0f,
+        0.0f, -0.5f,
+
+        0.0f, -0.5f,
+        -0.5f, -0.5f,
+        -0.5f, 0.0f,
     };
 
     unsigned int buffer;
@@ -65,7 +69,7 @@ int main(void){
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
 
 
