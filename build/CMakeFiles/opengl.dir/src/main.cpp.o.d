@@ -140,4 +140,9 @@ CMakeFiles/opengl.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/12.1.0/bits/fstream.tcc \
  /home/yousef/projects/opengl/src/fileReader.h \
- /home/yousef/projects/opengl/src/ShaderProgram.cpp
+ /home/yousef/projects/opengl/src/ShaderProgram.cpp \
+ /home/yousef/projects/opengl/src/Shader.cpp \
+ /home/yousef/projects/opengl/src/VAO.cpp \
+ /home/yousef/projects/opengl/src/VBO.cpp \
+ /home/yousef/projects/opengl/src/VertexLayout.cpp \
+ /home/yousef/projects/opengl/src/IndexBuffer.cpp

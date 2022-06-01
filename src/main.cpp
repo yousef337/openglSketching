@@ -4,6 +4,9 @@
 #include <string>
 #include "fileReader.cpp"
 #include "ShaderProgram.cpp"
+#include "VAO.cpp"
+#include "VBO.cpp"
+#include "IndexBuffer.cpp"
 
 int main(void){
 
@@ -60,30 +63,29 @@ int main(void){
         0, 1, 2, 2, 3, 1
     };
 
-    unsigned int vao;
+    VAO vao = VAO();
+    glBindVertexArray(vao.getVaoId());
 
-    glGenVertexArrays(1, &vao);
-    glBindVertexArray(vao);
+    VBO vbo = VBO();
+    vbo.setData(positoins, sizeof(positoins), GL_STATIC_DRAW);
 
-    unsigned int buffer;
-    glGenBuffers(1, &buffer);
-    glBindBuffer(GL_ARRAY_BUFFER, buffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(positoins), positoins, GL_STATIC_DRAW);
+    VertexLayout vertexLayout = VertexLayout(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), 0);
+    vbo.attributePointer(vertexLayout);
 
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), 0);
-    glEnableVertexAttribArray(0);
 
-    unsigned int indexedBuffer;
-    glGenBuffers(1, &indexedBuffer);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexedBuffer);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexedPositions), indexedPositions, GL_STATIC_DRAW);
 
+    IndexBuffer indexedBuffer = IndexBuffer(indexedPositions, sizeof(indexedPositions), GL_STATIC_DRAW);
+    indexedBuffer.bindToVAO(vao.getVaoId());
 
     ShaderProgram basic = ShaderProgram();
-    basic.addShader(GL_VERTEX_SHADER, fileReader("../res/shaders/vertex/basicPosition.shader"));
-    unsigned int aid = basic.addShader(GL_FRAGMENT_SHADER, fileReader("../res/shaders/fragment/redColoredBackground.shader"));
 
-    glLinkProgram(basic.getProgramId());
+    Shader vertexShader = Shader(GL_VERTEX_SHADER, fileReader("../res/shaders/vertex/basicPosition.shader"));
+    basic.addShader(vertexShader);
+
+    Shader fragmentShader = Shader(GL_FRAGMENT_SHADER, fileReader("../res/shaders/fragment/redColoredBackground.shader"));
+    basic.addShader(fragmentShader);
+    basic.linkProgram();
+
     glUseProgram(basic.getProgramId());
 
     float r = 0.0f;
