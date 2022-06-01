@@ -5,13 +5,6 @@
 #include "fileReader.cpp"
 #include "ShaderProgram.cpp"
 
-static unsigned int createShader(const std::string& vertexShader, const std::string& fragmentShader){
-
-
-    return 0;
-}
-
-
 int main(void){
 
     fileReader("../res/shaders/vertex/basicPosition.shader");
@@ -21,6 +14,10 @@ int main(void){
     /* Initialize the library */
     if (!glfwInit())
         return -1;
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     /* Create a windowed mode window and its OpenGL context */
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
@@ -37,6 +34,8 @@ int main(void){
     }else{
         std::cout << glGetString(GL_VERSION) << std::endl;
     }
+
+    //glDebugMessageCallback(&errorHandling, );
 
     /*
     float positoins[] = {
@@ -61,6 +60,11 @@ int main(void){
         0, 1, 2, 2, 3, 1
     };
 
+    unsigned int vao;
+
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
+
     unsigned int buffer;
     glGenBuffers(1, &buffer);
     glBindBuffer(GL_ARRAY_BUFFER, buffer);
@@ -77,10 +81,13 @@ int main(void){
 
     ShaderProgram basic = ShaderProgram();
     basic.addShader(GL_VERTEX_SHADER, fileReader("../res/shaders/vertex/basicPosition.shader"));
-    basic.addShader(GL_FRAGMENT_SHADER, fileReader("../res/shaders/fragment/redColoredBackground.shader"));
+    unsigned int aid = basic.addShader(GL_FRAGMENT_SHADER, fileReader("../res/shaders/fragment/redColoredBackground.shader"));
 
     glLinkProgram(basic.getProgramId());
     glUseProgram(basic.getProgramId());
+
+    float r = 0.0f;
+    float inc = 0.01f;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)){
@@ -90,6 +97,17 @@ int main(void){
 
         //glDrawArrays(GL_TRIANGLES, 0, 3);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+
+        glUniform4f(glGetUniformLocation(basic.getProgramId(), "u_color"), r, 0.4f, 0.3f, 1.0f);
+
+        if (r > 1.0f)
+            inc = -inc;
+        else if (r < 0.0f)
+            inc = 0.01f;
+
+        r += inc;
+
+
 
 
         /* Swap front and back buffers */

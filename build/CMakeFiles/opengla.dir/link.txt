@@ -1,1 +1,2 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/opengla.dir/main.cpp.o -o opengla 
+/usr/bin/ar qc libopengla.a CMakeFiles/opengla.dir/src/fileReader.cpp.o
+/usr/bin/ranlib libopengla.a

@@ -1,4 +1,3 @@
 #pragma once
 
-std::string fileReader(const std::string& filePath);
-
+static std::string fileReader(const std::string& filePath);

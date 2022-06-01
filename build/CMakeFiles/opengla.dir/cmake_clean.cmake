@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/opengla.dir/main.cpp.o"
-  "CMakeFiles/opengla.dir/main.cpp.o.d"
-  "opengla"
-  "opengla.pdb"
+  "CMakeFiles/opengla.dir/src/fileReader.cpp.o"
+  "CMakeFiles/opengla.dir/src/fileReader.cpp.o.d"
+  "libopengla.a"
+  "libopengla.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

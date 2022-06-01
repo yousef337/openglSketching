@@ -4,6 +4,11 @@ project(opengl)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 
+
+#add_library(opengla src/fileReader.cpp)
+#target_link_libraries(opengl src/fileReader.cpp)
+#add_library(opengla src/fileReader.cpp)
+
 install(TARGETS opengl RUNTIME DESTINATION bin)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
@@ -19,3 +24,7 @@ target_link_libraries(opengl OpenGL::GL)
 
 find_package(GLEW REQUIRED)
 target_link_libraries(opengl GLEW::GLEW)
+
+
+#ADD_LIBRARY(LibsModule src/fileReader.cpp)
+#target_link_libraries(opengl LibsModule)

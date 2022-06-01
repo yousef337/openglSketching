@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yousef/projects/opengl/main.cpp" "CMakeFiles/opengla.dir/main.cpp.o" "gcc" "CMakeFiles/opengla.dir/main.cpp.o.d"
+  "/home/yousef/projects/opengl/src/fileReader.cpp" "CMakeFiles/opengla.dir/src/fileReader.cpp.o" "gcc" "CMakeFiles/opengla.dir/src/fileReader.cpp.o.d"
   )
 
 # Targets to which this target links.

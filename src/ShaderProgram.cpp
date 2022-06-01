@@ -6,23 +6,8 @@ class ShaderProgram {
 private:
     unsigned int id;
 
-public:
+    void errorHandling(const unsigned int shaderId, const GLenum shaderType){
 
-    ShaderProgram(){
-        id = glCreateProgram();
-    }
-
-    unsigned int getProgramId(){
-        return id;
-    }
-
-    void addShader(GLenum shaderType, const std::string& shaderSource){
-        unsigned int shaderId = glCreateShader(shaderType);
-        const char* i = shaderSource.c_str();
-        glShaderSource(shaderId, 1, &i, nullptr);
-        glCompileShader(shaderId);
-
-        // ERROR HANDLING
         int results;
         glGetShaderiv(shaderId, GL_COMPILE_STATUS, &results);
 
@@ -39,9 +24,28 @@ public:
 
             std::cout << message << std::endl;
         }
+    }
 
+public:
+
+    ShaderProgram(){
+        id = glCreateProgram();
+    }
+
+    unsigned int getProgramId(){
+        return id;
+    }
+
+    unsigned int addShader(GLenum shaderType, const std::string& shaderSource){
+        unsigned int shaderId = glCreateShader(shaderType);
+        const char* i = shaderSource.c_str();
+        glShaderSource(shaderId, 1, &i, nullptr);
+        glCompileShader(shaderId);
+
+        errorHandling(shaderId, shaderType);
 
         glAttachShader(id, shaderId);
+        return shaderId;
     }
 
 };

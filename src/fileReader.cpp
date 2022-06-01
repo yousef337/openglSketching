@@ -3,7 +3,7 @@
 #include <fstream>
 #include "fileReader.h"
 
-std::string fileReader(const std::string& filePath){
+static std::string fileReader(const std::string& filePath){
 
     std::ifstream stream(filePath);
     std::string line;
