@@ -145,4 +145,40 @@ CMakeFiles/opengl.dir/src/main.cpp.o: \
  /home/yousef/projects/opengl/src/VAO.cpp \
  /home/yousef/projects/opengl/src/VBO.cpp \
  /home/yousef/projects/opengl/src/VertexLayout.cpp \
- /home/yousef/projects/opengl/src/IndexBuffer.cpp
+ /home/yousef/projects/opengl/src/Texture.cpp \
+ /home/yousef/projects/opengl/src/Intermediate/Image.cpp \
+ /home/yousef/projects/opengl/src/Intermediate/../external/stb_image/stb_image.cpp \
+ /home/yousef/projects/opengl/src/Intermediate/../external/stb_image/stb_image.h \
+ /usr/include/c++/12.1.0/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/c++/12.1.0/math.h \
+ /usr/include/c++/12.1.0/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/12.1.0/bits/specfun.h \
+ /usr/include/c++/12.1.0/limits /usr/include/c++/12.1.0/tr1/gamma.tcc \
+ /usr/include/c++/12.1.0/tr1/special_function_util.h \
+ /usr/include/c++/12.1.0/tr1/bessel_function.tcc \
+ /usr/include/c++/12.1.0/tr1/beta_function.tcc \
+ /usr/include/c++/12.1.0/tr1/ell_integral.tcc \
+ /usr/include/c++/12.1.0/tr1/exp_integral.tcc \
+ /usr/include/c++/12.1.0/tr1/hypergeometric.tcc \
+ /usr/include/c++/12.1.0/tr1/legendre_function.tcc \
+ /usr/include/c++/12.1.0/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/12.1.0/tr1/poly_hermite.tcc \
+ /usr/include/c++/12.1.0/tr1/poly_laguerre.tcc \
+ /usr/include/c++/12.1.0/tr1/riemann_zeta.tcc /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mm_malloc.h \
+ /home/yousef/projects/opengl/src/IndexBuffer.cpp \
+ /home/yousef/projects/opengl/src/Renderer.cpp

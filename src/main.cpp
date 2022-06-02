@@ -6,11 +6,12 @@
 #include "ShaderProgram.cpp"
 #include "VAO.cpp"
 #include "VBO.cpp"
+#include "Texture.cpp"
 #include "IndexBuffer.cpp"
+#include "Intermediate/Image.cpp"
+#include "Renderer.cpp"
 
 int main(void){
-
-    fileReader("../res/shaders/vertex/basicPosition.shader");
 
     GLFWwindow* window;
 
@@ -53,10 +54,10 @@ int main(void){
     */
 
     float positoins[] = {
-        0.0f, 0.0f,
-        -0.5f, 0.0f,
-        0.0f, -0.5f,
-        -0.5f, -0.5f,
+        0.0f, 0.0f,           1.0f, 1.0f,
+        -0.5f, 0.0f,          0.0f, 1.0f,
+        0.0f, -0.5f,          1.0f, 0.0f,
+        -0.5f, -0.5f,         0.0f, 0.0f
     };
 
     unsigned int indexedPositions[] = {
@@ -69,13 +70,18 @@ int main(void){
     VBO vbo = VBO();
     vbo.setData(positoins, sizeof(positoins), GL_STATIC_DRAW);
 
-    VertexLayout vertexLayout = VertexLayout(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), 0);
+    VertexLayout vertexLayout = VertexLayout(0, 2, GL_FLOAT, GL_FALSE, 4*sizeof(float), 0);
     vbo.attributePointer(vertexLayout);
+
+    VertexLayout texturesLayout = VertexLayout(1, 2, GL_FLOAT, GL_FALSE, 4*sizeof(float), (void*) (2*sizeof(float)));
+    vbo.attributePointer(texturesLayout);
 
 
 
     IndexBuffer indexedBuffer = IndexBuffer(indexedPositions, sizeof(indexedPositions), GL_STATIC_DRAW);
     indexedBuffer.bindToVAO(vao.getVaoId());
+    vao.setIndexCount(sizeof(indexedPositions)/sizeof(unsigned int));
+
 
     ShaderProgram basic = ShaderProgram();
 
@@ -86,19 +92,28 @@ int main(void){
     basic.addShader(fragmentShader);
     basic.linkProgram();
 
-    glUseProgram(basic.getProgramId());
+    //---- Texture
+
+    Texture texture = Texture(Image("../res/textures/brick.jpg"));
+
+    glUniform1i(glGetUniformLocation(basic.getProgramId(), "s_texture"), texture.getOffset());
+
+    //---
 
     float r = 0.0f;
     float inc = 0.01f;
+
+
+    Renderer renderer = Renderer();
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)){
 
         /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
+        renderer.clear();
 
-        //glDrawArrays(GL_TRIANGLES, 0, 3);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+        //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+        renderer.drawTrinanglerElement(vao, basic.getProgramId(), texture.getTexturId());
 
         glUniform4f(glGetUniformLocation(basic.getProgramId(), "u_color"), r, 0.4f, 0.3f, 1.0f);
 
@@ -108,8 +123,6 @@ int main(void){
             inc = 0.01f;
 
         r += inc;
-
-
 
 
         /* Swap front and back buffers */

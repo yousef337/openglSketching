@@ -200,10 +200,96 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/VAO.cpp \
   ../src/VBO.cpp \
   ../src/VertexLayout.cpp \
-  ../src/IndexBuffer.cpp
+  ../src/Texture.cpp \
+  ../src/Intermediate/Image.cpp \
+  ../src/external/stb_image/stb_image.cpp \
+  ../src/external/stb_image/stb_image.h \
+  /usr/include/c++/12.1.0/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/c++/12.1.0/math.h \
+  /usr/include/c++/12.1.0/cmath \
+  /usr/include/math.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/c++/12.1.0/bits/specfun.h \
+  /usr/include/c++/12.1.0/limits \
+  /usr/include/c++/12.1.0/tr1/gamma.tcc \
+  /usr/include/c++/12.1.0/tr1/special_function_util.h \
+  /usr/include/c++/12.1.0/tr1/bessel_function.tcc \
+  /usr/include/c++/12.1.0/tr1/beta_function.tcc \
+  /usr/include/c++/12.1.0/tr1/ell_integral.tcc \
+  /usr/include/c++/12.1.0/tr1/exp_integral.tcc \
+  /usr/include/c++/12.1.0/tr1/hypergeometric.tcc \
+  /usr/include/c++/12.1.0/tr1/legendre_function.tcc \
+  /usr/include/c++/12.1.0/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12.1.0/tr1/poly_hermite.tcc \
+  /usr/include/c++/12.1.0/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12.1.0/tr1/riemann_zeta.tcc \
+  /usr/include/assert.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mm_malloc.h \
+  ../src/IndexBuffer.cpp \
+  ../src/Renderer.cpp
 
+
+../src/Renderer.cpp:
 
 ../src/IndexBuffer.cpp:
+
+/usr/include/assert.h:
+
+/usr/include/c++/12.1.0/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/12.1.0/tr1/legendre_function.tcc:
+
+/usr/include/c++/12.1.0/tr1/hypergeometric.tcc:
+
+/usr/include/c++/12.1.0/tr1/exp_integral.tcc:
+
+/usr/include/c++/12.1.0/limits:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/strings.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/string.h:
+
+../src/external/stb_image/stb_image.h:
+
+../src/Intermediate/Image.cpp:
 
 ../src/VertexLayout.cpp:
 
@@ -235,11 +321,15 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/error_constants.h:
 
+/usr/include/c++/12.1.0/tr1/poly_laguerre.tcc:
+
 /usr/include/c++/12.1.0/bits/locale_classes.tcc:
 
 /usr/include/bits/types/error_t.h:
 
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/fp-logb.h:
 
 /usr/include/c++/12.1.0/bits/basic_string.tcc:
 
@@ -263,6 +353,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/12.1.0/cstdio:
 
+/usr/include/bits/mathcalls-narrow.h:
+
 /usr/include/c++/12.1.0/bits/std_abs.h:
 
 /usr/include/alloca.h:
@@ -270,6 +362,10 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/select.h:
+
+/usr/include/c++/12.1.0/tr1/bessel_function.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h:
 
 /usr/include/sys/select.h:
 
@@ -288,6 +384,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/sys/types.h:
 
 /usr/include/c++/12.1.0/string_view:
+
+/usr/include/c++/12.1.0/tr1/gamma.tcc:
 
 /usr/include/c++/12.1.0/bits/stl_construct.h:
 
@@ -308,6 +406,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/GL/glu.h:
 
 /usr/include/bits/types.h:
+
+/usr/include/linux/limits.h:
 
 /usr/include/stdint.h:
 
@@ -331,6 +431,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/12.1.0/typeinfo:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h:
+
 /usr/include/bits/wchar.h:
 
 /usr/include/c++/12.1.0/bits/char_traits.h:
@@ -338,6 +440,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/12.1.0/iosfwd:
+
+/usr/include/c++/12.1.0/math.h:
 
 /usr/include/c++/12.1.0/bits/fstream.tcc:
 
@@ -350,6 +454,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/bits/sched.h:
 
 /usr/include/bits/types/__locale_t.h:
+
+/usr/include/c++/12.1.0/tr1/ell_integral.tcc:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -366,6 +472,10 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /usr/include/c++/12.1.0/exception:
+
+/usr/include/c++/12.1.0/tr1/poly_hermite.tcc:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
 
 /usr/include/c++/12.1.0/bits/new_allocator.h:
 
@@ -415,6 +525,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/12.1.0/bits/specfun.h:
+
 /usr/include/c++/12.1.0/bits/stringfwd.h:
 
 /usr/include/c++/12.1.0/pstl/pstl_config.h:
@@ -429,11 +541,15 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/main.cpp:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h:
+
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/12.1.0/cmath:
 
 /usr/include/c++/12.1.0/bits/nested_exception.h:
 
@@ -449,6 +565,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/wchar.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mmintrin.h:
+
 /usr/include/c++/12.1.0/cstdint:
 
 /usr/include/c++/12.1.0/bits/refwrap.h:
@@ -458,6 +576,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/12.1.0/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/12.1.0/new:
+
+../src/external/stb_image/stb_image.cpp:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -473,9 +593,13 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/bits/locale.h:
 
+../src/Texture.cpp:
+
 /usr/include/bits/waitflags.h:
 
 /usr/include/ctype.h:
+
+/usr/include/c++/12.1.0/tr1/beta_function.tcc:
 
 /usr/include/features.h:
 
@@ -489,9 +613,13 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
+/usr/include/bits/mathcalls.h:
+
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/bits/types/clock_t.h:
+
+/usr/include/c++/12.1.0/stdlib.h:
 
 /usr/include/c++/12.1.0/system_error:
 
@@ -529,6 +657,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/bits/types/struct_itimerspec.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xmmintrin.h:
+
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/struct_mutex.h:
@@ -547,6 +677,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/sys/single_threaded.h:
 
+/usr/include/c++/12.1.0/tr1/special_function_util.h:
+
 /usr/include/c++/12.1.0/bits/allocator.h:
 
 /usr/include/bits/stdio_lim.h:
@@ -558,6 +690,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/c++/12.1.0/bits/cpp_type_traits.h:
+
+/usr/include/limits.h:
 
 /usr/include/c++/12.1.0/bits/stl_iterator_base_types.h:
 
@@ -577,13 +711,21 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/12.1.0/bits/stl_function.h:
 
+/usr/include/bits/xopen_lim.h:
+
 /usr/include/c++/12.1.0/backward/binders.h:
+
+/usr/include/c++/12.1.0/tr1/riemann_zeta.tcc:
+
+/usr/include/bits/flt-eval-method.h:
 
 ../src/VAO.cpp:
 
 /usr/include/bits/types/FILE.h:
 
 /usr/include/c++/12.1.0/bits/stl_algobase.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mm_malloc.h:
 
 /usr/include/c++/12.1.0/bits/stl_pair.h:
 
@@ -596,6 +738,8 @@ CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/12.1.0/bits/invoke.h:
 
 /usr/include/c++/12.1.0/bits/range_access.h:
+
+/usr/include/bits/posix2_lim.h:
 
 /usr/include/c++/12.1.0/initializer_list:
 
