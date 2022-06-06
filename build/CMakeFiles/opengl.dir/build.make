@@ -69,10 +69,262 @@ include CMakeFiles/opengl.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opengl.dir/flags.make
 
+CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o: ../src/IndexBuffer.cpp
+CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o -MF CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o.d -o CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o -c /home/yousef/projects/opengl/src/IndexBuffer.cpp
+
+CMakeFiles/opengl.dir/src/IndexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/IndexBuffer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/IndexBuffer.cpp > CMakeFiles/opengl.dir/src/IndexBuffer.cpp.i
+
+CMakeFiles/opengl.dir/src/IndexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/IndexBuffer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/IndexBuffer.cpp -o CMakeFiles/opengl.dir/src/IndexBuffer.cpp.s
+
+CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o: ../src/Intermediate/Image.cpp
+CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o -MF CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o.d -o CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o -c /home/yousef/projects/opengl/src/Intermediate/Image.cpp
+
+CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/Intermediate/Image.cpp > CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.i
+
+CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/Intermediate/Image.cpp -o CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.s
+
+CMakeFiles/opengl.dir/src/Renderer.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/Renderer.cpp.o: ../src/Renderer.cpp
+CMakeFiles/opengl.dir/src/Renderer.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl.dir/src/Renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/Renderer.cpp.o -MF CMakeFiles/opengl.dir/src/Renderer.cpp.o.d -o CMakeFiles/opengl.dir/src/Renderer.cpp.o -c /home/yousef/projects/opengl/src/Renderer.cpp
+
+CMakeFiles/opengl.dir/src/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/Renderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/Renderer.cpp > CMakeFiles/opengl.dir/src/Renderer.cpp.i
+
+CMakeFiles/opengl.dir/src/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/Renderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/Renderer.cpp -o CMakeFiles/opengl.dir/src/Renderer.cpp.s
+
+CMakeFiles/opengl.dir/src/Shader.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/Shader.cpp.o: ../src/Shader.cpp
+CMakeFiles/opengl.dir/src/Shader.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl.dir/src/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/Shader.cpp.o -MF CMakeFiles/opengl.dir/src/Shader.cpp.o.d -o CMakeFiles/opengl.dir/src/Shader.cpp.o -c /home/yousef/projects/opengl/src/Shader.cpp
+
+CMakeFiles/opengl.dir/src/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/Shader.cpp > CMakeFiles/opengl.dir/src/Shader.cpp.i
+
+CMakeFiles/opengl.dir/src/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/Shader.cpp -o CMakeFiles/opengl.dir/src/Shader.cpp.s
+
+CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o: ../src/ShaderProgram.cpp
+CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o -MF CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o.d -o CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o -c /home/yousef/projects/opengl/src/ShaderProgram.cpp
+
+CMakeFiles/opengl.dir/src/ShaderProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/ShaderProgram.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/ShaderProgram.cpp > CMakeFiles/opengl.dir/src/ShaderProgram.cpp.i
+
+CMakeFiles/opengl.dir/src/ShaderProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/ShaderProgram.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/ShaderProgram.cpp -o CMakeFiles/opengl.dir/src/ShaderProgram.cpp.s
+
+CMakeFiles/opengl.dir/src/Texture.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/Texture.cpp.o: ../src/Texture.cpp
+CMakeFiles/opengl.dir/src/Texture.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opengl.dir/src/Texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/Texture.cpp.o -MF CMakeFiles/opengl.dir/src/Texture.cpp.o.d -o CMakeFiles/opengl.dir/src/Texture.cpp.o -c /home/yousef/projects/opengl/src/Texture.cpp
+
+CMakeFiles/opengl.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/Texture.cpp > CMakeFiles/opengl.dir/src/Texture.cpp.i
+
+CMakeFiles/opengl.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/Texture.cpp -o CMakeFiles/opengl.dir/src/Texture.cpp.s
+
+CMakeFiles/opengl.dir/src/VAO.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/VAO.cpp.o: ../src/VAO.cpp
+CMakeFiles/opengl.dir/src/VAO.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opengl.dir/src/VAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/VAO.cpp.o -MF CMakeFiles/opengl.dir/src/VAO.cpp.o.d -o CMakeFiles/opengl.dir/src/VAO.cpp.o -c /home/yousef/projects/opengl/src/VAO.cpp
+
+CMakeFiles/opengl.dir/src/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/VAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/VAO.cpp > CMakeFiles/opengl.dir/src/VAO.cpp.i
+
+CMakeFiles/opengl.dir/src/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/VAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/VAO.cpp -o CMakeFiles/opengl.dir/src/VAO.cpp.s
+
+CMakeFiles/opengl.dir/src/VBO.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/VBO.cpp.o: ../src/VBO.cpp
+CMakeFiles/opengl.dir/src/VBO.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opengl.dir/src/VBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/VBO.cpp.o -MF CMakeFiles/opengl.dir/src/VBO.cpp.o.d -o CMakeFiles/opengl.dir/src/VBO.cpp.o -c /home/yousef/projects/opengl/src/VBO.cpp
+
+CMakeFiles/opengl.dir/src/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/VBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/VBO.cpp > CMakeFiles/opengl.dir/src/VBO.cpp.i
+
+CMakeFiles/opengl.dir/src/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/VBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/VBO.cpp -o CMakeFiles/opengl.dir/src/VBO.cpp.s
+
+CMakeFiles/opengl.dir/src/VertexLayout.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/VertexLayout.cpp.o: ../src/VertexLayout.cpp
+CMakeFiles/opengl.dir/src/VertexLayout.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opengl.dir/src/VertexLayout.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/VertexLayout.cpp.o -MF CMakeFiles/opengl.dir/src/VertexLayout.cpp.o.d -o CMakeFiles/opengl.dir/src/VertexLayout.cpp.o -c /home/yousef/projects/opengl/src/VertexLayout.cpp
+
+CMakeFiles/opengl.dir/src/VertexLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/VertexLayout.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/VertexLayout.cpp > CMakeFiles/opengl.dir/src/VertexLayout.cpp.i
+
+CMakeFiles/opengl.dir/src/VertexLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/VertexLayout.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/VertexLayout.cpp -o CMakeFiles/opengl.dir/src/VertexLayout.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o: ../src/external/imGUI/imgui.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o: ../src/external/imGUI/imgui_demo.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_demo.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_demo.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_demo.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o: ../src/external/imGUI/imgui_draw.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_draw.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_draw.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_draw.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o: ../src/external/imGUI/imgui_impl_glfw.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_glfw.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_glfw.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_glfw.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o: ../src/external/imGUI/imgui_impl_opengl3.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_opengl3.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_opengl3.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_opengl3.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o: ../src/external/imGUI/imgui_tables.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_tables.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_tables.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_tables.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o: ../src/external/imGUI/imgui_widgets.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_widgets.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/imgui_widgets.cpp > CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/imgui_widgets.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.s
+
+CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o: ../src/external/imGUI/main.cpp
+CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o -MF CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o.d -o CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/main.cpp
+
+CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/external/imGUI/main.cpp > CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.i
+
+CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/external/imGUI/main.cpp -o CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.s
+
+CMakeFiles/opengl.dir/src/fileReader.cpp.o: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/src/fileReader.cpp.o: ../src/fileReader.cpp
+CMakeFiles/opengl.dir/src/fileReader.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/opengl.dir/src/fileReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/fileReader.cpp.o -MF CMakeFiles/opengl.dir/src/fileReader.cpp.o.d -o CMakeFiles/opengl.dir/src/fileReader.cpp.o -c /home/yousef/projects/opengl/src/fileReader.cpp
+
+CMakeFiles/opengl.dir/src/fileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/src/fileReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yousef/projects/opengl/src/fileReader.cpp > CMakeFiles/opengl.dir/src/fileReader.cpp.i
+
+CMakeFiles/opengl.dir/src/fileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/src/fileReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yousef/projects/opengl/src/fileReader.cpp -o CMakeFiles/opengl.dir/src/fileReader.cpp.s
+
 CMakeFiles/opengl.dir/src/main.cpp.o: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/opengl.dir/src/main.cpp.o: CMakeFiles/opengl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/opengl.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl.dir/src/main.cpp.o -MF CMakeFiles/opengl.dir/src/main.cpp.o.d -o CMakeFiles/opengl.dir/src/main.cpp.o -c /home/yousef/projects/opengl/src/main.cpp
 
 CMakeFiles/opengl.dir/src/main.cpp.i: cmake_force
@@ -85,11 +337,47 @@ CMakeFiles/opengl.dir/src/main.cpp.s: cmake_force
 
 # Object files for target opengl
 opengl_OBJECTS = \
+"CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o" \
+"CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o" \
+"CMakeFiles/opengl.dir/src/Renderer.cpp.o" \
+"CMakeFiles/opengl.dir/src/Shader.cpp.o" \
+"CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o" \
+"CMakeFiles/opengl.dir/src/Texture.cpp.o" \
+"CMakeFiles/opengl.dir/src/VAO.cpp.o" \
+"CMakeFiles/opengl.dir/src/VBO.cpp.o" \
+"CMakeFiles/opengl.dir/src/VertexLayout.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o" \
+"CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o" \
+"CMakeFiles/opengl.dir/src/fileReader.cpp.o" \
 "CMakeFiles/opengl.dir/src/main.cpp.o"
 
 # External object files for target opengl
 opengl_EXTERNAL_OBJECTS =
 
+opengl: CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o
+opengl: CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o
+opengl: CMakeFiles/opengl.dir/src/Renderer.cpp.o
+opengl: CMakeFiles/opengl.dir/src/Shader.cpp.o
+opengl: CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o
+opengl: CMakeFiles/opengl.dir/src/Texture.cpp.o
+opengl: CMakeFiles/opengl.dir/src/VAO.cpp.o
+opengl: CMakeFiles/opengl.dir/src/VBO.cpp.o
+opengl: CMakeFiles/opengl.dir/src/VertexLayout.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o
+opengl: CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o
+opengl: CMakeFiles/opengl.dir/src/fileReader.cpp.o
 opengl: CMakeFiles/opengl.dir/src/main.cpp.o
 opengl: CMakeFiles/opengl.dir/build.make
 opengl: libs/glfw-3.3.7/src/libglfw3.a
@@ -99,7 +387,7 @@ opengl: /usr/lib/librt.a
 opengl: /usr/lib/libm.so
 opengl: /usr/lib/libX11.so
 opengl: CMakeFiles/opengl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yousef/projects/opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable opengl"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

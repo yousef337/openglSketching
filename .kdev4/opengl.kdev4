@@ -16,7 +16,7 @@ Install Directory=/usr/local
 Runtime=Host System
 
 [Filters]
-size=42
+size=43
 
 [Filters][0]
 inclusive=0
@@ -202,6 +202,11 @@ targets=1
 inclusive=0
 pattern=/opengl
 targets=1
+
+[Filters][42]
+inclusive=0
+pattern=/src/external/imGUI/example_glfw_opengl3
+targets=2
 
 [Filters][5]
 inclusive=1

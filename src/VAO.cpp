@@ -1,29 +1,19 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#pragma once
+#include "VAO.h"
 
-class VAO {
-
-private:
-    unsigned int vaoId;
-    unsigned int indexCount;
-
-public:
-    VAO(){
+    VAO::VAO(){
         glGenVertexArrays(1, &vaoId);
     }
 
-    void setIndexCount(unsigned int count){
+    void VAO::setIndexCount(unsigned int count){
         indexCount = count;
     }
 
-    unsigned int getVaoId(){
+    unsigned int VAO::getVaoId(){
         return vaoId;
     }
 
-    unsigned int getIndexCount(){
+    unsigned int VAO::getIndexCount(){
         return indexCount;
     }
-
-
-};

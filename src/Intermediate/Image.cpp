@@ -1,33 +1,29 @@
-#pragma once
-#include "../external/stb_image/stb_image.cpp"
+#include "Image.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include "../external/stb_image/stb_image.h"
 
-class Image{
-private:
-    int width, height, nrChannels;
-    unsigned char* data;
-public:
-
-    Image(const char* filePath){
+    Image::Image(const char* filePath){
+        stbi_set_flip_vertically_on_load(true);
         data = stbi_load(filePath, &width, &height, &nrChannels, 0);
     }
 
-    unsigned char* getImgData(){
+    unsigned char* Image::getImgData(){
         return data;
     }
 
-    void freeData(){
+    void Image::freeData(){
         stbi_image_free(data);
     }
 
-    int getWidth(){
+    int Image::getWidth(){
         return width;
     }
 
-    int getHeight(){
+    int Image::getHeight(){
         return height;
     }
 
-    int getNRChannels(){
+    int Image::getNRChannels(){
         return nrChannels;
     }
-};
+

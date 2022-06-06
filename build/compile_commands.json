@@ -1,6 +1,96 @@
 [
 {
   "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o -c /home/yousef/projects/opengl/src/IndexBuffer.cpp",
+  "file": "/home/yousef/projects/opengl/src/IndexBuffer.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o -c /home/yousef/projects/opengl/src/Intermediate/Image.cpp",
+  "file": "/home/yousef/projects/opengl/src/Intermediate/Image.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/Renderer.cpp.o -c /home/yousef/projects/opengl/src/Renderer.cpp",
+  "file": "/home/yousef/projects/opengl/src/Renderer.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/Shader.cpp.o -c /home/yousef/projects/opengl/src/Shader.cpp",
+  "file": "/home/yousef/projects/opengl/src/Shader.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/ShaderProgram.cpp.o -c /home/yousef/projects/opengl/src/ShaderProgram.cpp",
+  "file": "/home/yousef/projects/opengl/src/ShaderProgram.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/Texture.cpp.o -c /home/yousef/projects/opengl/src/Texture.cpp",
+  "file": "/home/yousef/projects/opengl/src/Texture.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/VAO.cpp.o -c /home/yousef/projects/opengl/src/VAO.cpp",
+  "file": "/home/yousef/projects/opengl/src/VAO.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/VBO.cpp.o -c /home/yousef/projects/opengl/src/VBO.cpp",
+  "file": "/home/yousef/projects/opengl/src/VBO.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/VertexLayout.cpp.o -c /home/yousef/projects/opengl/src/VertexLayout.cpp",
+  "file": "/home/yousef/projects/opengl/src/VertexLayout.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_demo.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_demo.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_demo.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_draw.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_draw.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_draw.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_glfw.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_glfw.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_impl_opengl3.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_impl_opengl3.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_tables.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_tables.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_tables.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/imgui_widgets.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/imgui_widgets.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o -c /home/yousef/projects/opengl/src/external/imGUI/main.cpp",
+  "file": "/home/yousef/projects/opengl/src/external/imGUI/main.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/fileReader.cpp.o -c /home/yousef/projects/opengl/src/fileReader.cpp",
+  "file": "/home/yousef/projects/opengl/src/fileReader.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
   "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/main.cpp.o -c /home/yousef/projects/opengl/src/main.cpp",
   "file": "/home/yousef/projects/opengl/src/main.cpp"
 },

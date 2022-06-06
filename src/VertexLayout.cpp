@@ -1,18 +1,6 @@
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
+#include "VertexLayout.h"
 
-class VertexLayout {
-
-private:
-    unsigned int index;
-    int size;
-    GLenum type;
-    unsigned int stride;
-    GLboolean normalized;
-    void* offset;
-
-public:
-    VertexLayout(const unsigned int index, const int size, const GLenum type, const GLboolean normalized, const GLsizei stride, void* offset){
+    VertexLayout::VertexLayout(const unsigned int index, const int size, const GLenum type, const GLboolean normalized, const GLsizei stride, void* offset){
         this->index = index;
         this->size = size;
         this->type = type;
@@ -21,28 +9,26 @@ public:
         this->offset = offset;
     }
 
-    unsigned int getIndex(){
+    unsigned int VertexLayout::getIndex(){
      return index;
     }
 
-    int getSize(){
+    int VertexLayout::getSize(){
         return size;
     }
 
-    GLenum getType(){
+    GLenum VertexLayout::getType(){
         return type;
     }
 
-    unsigned int getStride(){
+    unsigned int VertexLayout::getStride(){
         return stride;
     }
 
-    GLboolean isNormalized(){
+    GLboolean VertexLayout::isNormalized(){
         return normalized;
     }
 
-    void* getOffset(){
+    void* VertexLayout::getOffset(){
         return offset;
     }
-
-};

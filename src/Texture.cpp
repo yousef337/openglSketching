@@ -1,15 +1,7 @@
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include "Intermediate/Image.cpp"
+#include "Texture.h"
 
-class Texture{
 
-private:
-    unsigned int textureId;
-    unsigned int offset;
-    Image imgTexture;
-
-    void setUpTexture(){
+    void Texture::setUpTexture(){
         glBindTexture(GL_TEXTURE_2D, textureId);
         glActiveTexture(GL_TEXTURE0 + offset);
 
@@ -22,7 +14,7 @@ private:
     }
 
 
-    void updateImage(){
+    void Texture::updateImage(){
         glBindTexture(GL_TEXTURE_2D, textureId);
 
         if (imgTexture.getImgData()){
@@ -34,8 +26,7 @@ private:
 
     }
 
-public:
-    Texture(const Image img, unsigned int offset = 0): imgTexture(img){
+    Texture::Texture(const Image img, const unsigned int offset): imgTexture(img){
         glGenTextures(1, &textureId);
         this->offset = offset;
         this->imgTexture = img;
@@ -44,12 +35,10 @@ public:
     }
 
 
-    unsigned int getOffset(){
+    unsigned int Texture::getOffset() const{
         return offset;
     }
 
-    unsigned int getTexturId(){
+    unsigned int Texture::getTexturId() const {
         return textureId;
     }
-
-};

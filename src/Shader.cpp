@@ -1,14 +1,6 @@
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include <iostream>
-#include <string>
+#include "Shader.h"
 
-class Shader {
-
-private:
-    unsigned int shaderId;
-
-    void errorHandling(const std::string shaderIdentifier){
+    void Shader::errorHandling(const std::string shaderIdentifier){
 
     int results;
     glGetShaderiv(shaderId, GL_COMPILE_STATUS, &results);
@@ -28,20 +20,17 @@ private:
     }
 }
 
-
-public:
-
-    Shader(GLenum shaderType){
+    Shader::Shader(GLenum shaderType){
         shaderId = glCreateShader(shaderType);
     }
 
 
-    Shader(GLenum shaderType, const std::string& shaderSource){
+    Shader::Shader(GLenum shaderType, const std::string& shaderSource){
         shaderId = glCreateShader(shaderType);
         setResource(shaderSource);
     }
 
-    unsigned int setResource(const std::string& shaderSource){
+    unsigned int Shader::setResource(const std::string& shaderSource){
 
         const char* i = shaderSource.c_str();
             glShaderSource(shaderId, 1, &i, nullptr);
@@ -52,12 +41,10 @@ public:
             return shaderId;
         }
 
-    void checkError(const std::string shaderIdentifier){
+    void Shader::checkError(const std::string shaderIdentifier){
         errorHandling(shaderIdentifier);
     }
 
-    unsigned int getShaderId(){
+    unsigned int Shader::getShaderId() const{
         return shaderId;
     }
-
-};

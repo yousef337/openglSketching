@@ -9,5 +9,5 @@ uniform vec4 u_color;
 uniform sampler2D s_texture;
 
 void main(){
-    color = texture(s_texture, textureCoord);
+    color = mix(texture(s_texture, textureCoord), u_color, .40);
 };
