@@ -42,7 +42,7 @@ void assistentWindowSetup(GLFWwindow* window){
 
 }
 
-void assistentFrameSetup(Program program){
+void assistentFrameSetup(RotatingMikasa program){
     // Start the Dear ImGui frame
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
@@ -92,6 +92,8 @@ int main(void){
     }
 
     glDebugMessageCallback(&errorHandling, (void*) 0 );
+    glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST);
 
     Renderer renderer = Renderer();
 

@@ -1,7 +1,7 @@
 #include "Renderer.h"
 
     void Renderer::clear(){
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
     void Renderer::drawTrinanglerElement(VAO vao, unsigned int shaderProgramId, unsigned int texturId){
