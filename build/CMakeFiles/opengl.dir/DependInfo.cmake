@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yousef/projects/opengl/src/external/imGUI/main.cpp" "CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/external/imGUI/main.cpp.o.d"
   "/home/yousef/projects/opengl/src/fileReader.cpp" "CMakeFiles/opengl.dir/src/fileReader.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/fileReader.cpp.o.d"
   "/home/yousef/projects/opengl/src/main.cpp" "CMakeFiles/opengl.dir/src/main.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/main.cpp.o.d"
+  "/home/yousef/projects/opengl/src/scences/RotatingMikasa.cpp" "CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o.d"
   )
 
 # Targets to which this target links.

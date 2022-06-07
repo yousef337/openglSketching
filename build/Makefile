@@ -669,6 +669,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/scences/RotatingMikasa.o: src/scences/RotatingMikasa.cpp.o
+.PHONY : src/scences/RotatingMikasa.o
+
+# target to build an object file
+src/scences/RotatingMikasa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o
+.PHONY : src/scences/RotatingMikasa.cpp.o
+
+src/scences/RotatingMikasa.i: src/scences/RotatingMikasa.cpp.i
+.PHONY : src/scences/RotatingMikasa.i
+
+# target to preprocess a source file
+src/scences/RotatingMikasa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.i
+.PHONY : src/scences/RotatingMikasa.cpp.i
+
+src/scences/RotatingMikasa.s: src/scences/RotatingMikasa.cpp.s
+.PHONY : src/scences/RotatingMikasa.s
+
+# target to generate assembly for a file
+src/scences/RotatingMikasa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.s
+.PHONY : src/scences/RotatingMikasa.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -742,6 +766,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scences/RotatingMikasa.o"
+	@echo "... src/scences/RotatingMikasa.i"
+	@echo "... src/scences/RotatingMikasa.s"
 .PHONY : help
 
 

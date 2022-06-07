@@ -5,7 +5,7 @@ project(opengl)
 set (source_dir "${PROJECT_SOURCE_DIR}")
 
 
-file (GLOB source_files "${source_dir}/src/*.cpp" "${source_dir}/src/Intermediate/*.cpp" "${source_dir}/src/external/imGUI/*.cpp")
+file (GLOB source_files "${source_dir}/src/*.cpp" "${source_dir}/src/Intermediate/*.cpp" "${source_dir}/src/scences/*.cpp" "${source_dir}/src/external/imGUI/*.cpp")
 ##list(REMOVE_ITEM ITEM "src/external/imGUI/main.cpp")
 
 add_executable(${PROJECT_NAME} ${source_files})

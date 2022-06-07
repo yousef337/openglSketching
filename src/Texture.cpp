@@ -1,6 +1,19 @@
 #include "Texture.h"
 
 
+    Texture::Texture(const Image img, const unsigned int offset): imgTexture(img){
+        glGenTextures(1, &textureId);
+        this->offset = offset;
+        this->imgTexture = img;
+        setUpTexture();
+        updateImage();
+    }
+
+    Texture::Texture() : imgTexture(""){
+        this->offset = 0;
+    }
+
+
     void Texture::setUpTexture(){
         glBindTexture(GL_TEXTURE_2D, textureId);
         glActiveTexture(GL_TEXTURE0 + offset);
@@ -25,15 +38,6 @@
         glBindTexture(GL_TEXTURE_2D, 0);
 
     }
-
-    Texture::Texture(const Image img, const unsigned int offset): imgTexture(img){
-        glGenTextures(1, &textureId);
-        this->offset = offset;
-        this->imgTexture = img;
-        setUpTexture();
-        updateImage();
-    }
-
 
     unsigned int Texture::getOffset() const{
         return offset;

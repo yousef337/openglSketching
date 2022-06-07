@@ -15,6 +15,7 @@ private:
     void updateImage();
 
 public:
+    Texture();
     Texture(const Image img, const unsigned int offset = 0);
 
     unsigned int getOffset() const;

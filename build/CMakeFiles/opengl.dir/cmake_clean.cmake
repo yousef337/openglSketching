@@ -37,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opengl.dir/src/fileReader.cpp.o.d"
   "CMakeFiles/opengl.dir/src/main.cpp.o"
   "CMakeFiles/opengl.dir/src/main.cpp.o.d"
+  "CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o"
+  "CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o.d"
   "opengl"
   "opengl.pdb"
 )

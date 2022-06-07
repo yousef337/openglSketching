@@ -95,6 +95,11 @@
   "file": "/home/yousef/projects/opengl/src/main.cpp"
 },
 {
+  "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/scences/RotatingMikasa.cpp.o -c /home/yousef/projects/opengl/src/scences/RotatingMikasa.cpp",
+  "file": "/home/yousef/projects/opengl/src/scences/RotatingMikasa.cpp"
+},
+{
   "directory": "/home/yousef/projects/opengl/build/libs/glfw-3.3.7/src",
   "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -I/home/yousef/projects/opengl/libs/glfw-3.3.7/src -I/home/yousef/projects/opengl/build/libs/glfw-3.3.7/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/yousef/projects/opengl/libs/glfw-3.3.7/src/context.c",
   "file": "/home/yousef/projects/opengl/libs/glfw-3.3.7/src/context.c"
