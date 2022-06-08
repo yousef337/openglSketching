@@ -359,4 +359,5 @@ CMakeFiles/opengl.dir/src/main.cpp.o: \
  /home/yousef/projects/opengl/src/Renderer.h \
  /home/yousef/projects/opengl/src/VAO.h \
  /home/yousef/projects/opengl/src/scences/RotatingMikasa.h \
- /home/yousef/projects/opengl/src/scences/Program.h
+ /home/yousef/projects/opengl/src/scences/Program.h \
+ /home/yousef/projects/opengl/src/scences/../Camera.h

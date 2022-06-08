@@ -84,27 +84,23 @@ RotatingMikasa::RotatingMikasa() {
 
 }
 
-
-void RotatingMikasa::main(Renderer renderer){
+void RotatingMikasa::main(const Renderer renderer, const Camera camera){
 
         {
             glm::mat4 model = glm::mat4(1.0f);
-            glm::mat4 view = glm::mat4(1.0f);
             glm::mat4 proj = glm::mat4(1.0f);
 
 
-            model = glm::rotate(model, glm::radians(rr*1+0*30.0f) , glm::vec3 {1.0f, 1.0f, 1.0f});
+            model = glm::rotate(model, glm::radians(0.0f) , glm::vec3 {1.0f, 1.0f, 1.0f});
 
             model = glm::translate(model, glm::vec3 {1, 1, -1});
             model = glm::scale(model, glm::vec3 {1, 1, 1});
-
-            view = glm::translate(view, glm::vec3 {0, 0, -5});
 
             //proj = glm::ortho(-5.0f, 5.0f, -5.0f, 5.0f, 0.0f , 5.0f);
             proj = glm::perspective(glm::radians(45.0f), (float)1080/(float)680, 0.1f, 10.0f);
 
             basic.addGlUniformMatrix4fv("modelMat", model);
-            basic.addGlUniformMatrix4fv("viewMat", view);
+            basic.addGlUniformMatrix4fv("viewMat", camera.getViewMatrix());
             basic.addGlUniformMatrix4fv("projMat", proj);
 
             renderer.drawTrinanglerElement(vao, basic.getProgramId(), texture.getTexturId());

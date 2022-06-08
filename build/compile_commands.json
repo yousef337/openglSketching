@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/yousef/projects/opengl/build",
+  "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/Camera.cpp.o -c /home/yousef/projects/opengl/src/Camera.cpp",
+  "file": "/home/yousef/projects/opengl/src/Camera.cpp"
+},
+{
+  "directory": "/home/yousef/projects/opengl/build",
   "command": "/usr/bin/c++  -I/home/yousef/projects/opengl/libs/glfw-3.3.7/include -g -o CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o -c /home/yousef/projects/opengl/src/IndexBuffer.cpp",
   "file": "/home/yousef/projects/opengl/src/IndexBuffer.cpp"
 },

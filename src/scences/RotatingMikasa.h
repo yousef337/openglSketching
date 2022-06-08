@@ -9,6 +9,7 @@
 #include "../IndexBuffer.h"
 #include "../Texture.h"
 #include "../Renderer.h"
+#include "../Camera.h"
 #include "../external/glm/vec4.hpp"
 #include "../external/glm/mat4x4.hpp"
 
@@ -24,8 +25,7 @@ private:
 
 public:
     RotatingMikasa();
-    void main(Renderer renderer) override;
+    void main(const Renderer renderer, const Camera camera) override;
     void imGui() override;
     ~RotatingMikasa();
-
 };

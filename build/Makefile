@@ -213,6 +213,30 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f libs/glfw-3.3.7/src/CMakeFiles/glfw.dir/build.make libs/glfw-3.3.7/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+src/Camera.o: src/Camera.cpp.o
+.PHONY : src/Camera.o
+
+# target to build an object file
+src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
+
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
 src/IndexBuffer.o: src/IndexBuffer.cpp.o
 .PHONY : src/IndexBuffer.o
 
@@ -709,6 +733,9 @@ help:
 	@echo "... update_mappings"
 	@echo "... glfw"
 	@echo "... opengl"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
 	@echo "... src/IndexBuffer.o"
 	@echo "... src/IndexBuffer.i"
 	@echo "... src/IndexBuffer.s"

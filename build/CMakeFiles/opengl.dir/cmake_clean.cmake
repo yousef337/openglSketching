@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/opengl.dir/src/Camera.cpp.o"
+  "CMakeFiles/opengl.dir/src/Camera.cpp.o.d"
   "CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o"
   "CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o.d"
   "CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o"

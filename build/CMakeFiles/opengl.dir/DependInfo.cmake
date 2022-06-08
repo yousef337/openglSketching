@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/yousef/projects/opengl/src/Camera.cpp" "CMakeFiles/opengl.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/Camera.cpp.o.d"
   "/home/yousef/projects/opengl/src/IndexBuffer.cpp" "CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/IndexBuffer.cpp.o.d"
   "/home/yousef/projects/opengl/src/Intermediate/Image.cpp" "CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/Intermediate/Image.cpp.o.d"
   "/home/yousef/projects/opengl/src/Renderer.cpp" "CMakeFiles/opengl.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/opengl.dir/src/Renderer.cpp.o.d"

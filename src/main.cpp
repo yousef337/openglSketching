@@ -14,6 +14,7 @@
 #include "external/glm/mat4x4.hpp"
 #include "scences/RotatingMikasa.h"
 #include "scences/Program.h"
+#include "Camera.h"
 
 void errorHandling (GLenum source,
             GLenum type,
@@ -63,6 +64,48 @@ void assistentCleanSetup(){
     ImGui::DestroyContext();
 }
 
+Camera camera = Camera();
+float lastMouseX = 0.0f;
+float lastMouseY = 0.0f;
+float yawAngle = 0.0f;
+float pitchAngle = 0.0f;
+bool firstMove = true;
+
+void mouseCallback(GLFWwindow* window, double xpos, double ypos){
+
+    if (firstMove){
+        lastMouseX = xpos;
+        lastMouseY = ypos;
+        firstMove = false;
+    }
+
+    float xOffset = xpos - lastMouseX;
+    float yOffset = lastMouseY - ypos;
+
+    lastMouseX = xpos;
+    lastMouseY = ypos;
+
+    const float sensitivity = 0.1f;
+
+    xOffset *= sensitivity;
+    yOffset *= sensitivity;
+
+    yawAngle += xOffset;
+    pitchAngle += yOffset;
+
+    if(pitchAngle > 89.0f)
+        pitchAngle = 89.0f;
+    if(pitchAngle < -89.0f)
+        pitchAngle = -89.0f;
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yawAngle)) * cos(glm::radians(pitchAngle));
+    direction.y = sin(glm::radians(pitchAngle));
+    direction.z = sin(glm::radians(yawAngle)) * cos(glm::radians(pitchAngle));
+    camera.setPointingPosition(glm::normalize(direction));
+
+}
+
 int main(void){
 
     GLFWwindow* window;
@@ -92,26 +135,27 @@ int main(void){
     }
 
     glDebugMessageCallback(&errorHandling, (void*) 0 );
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     glEnable(GL_BLEND);
     glEnable(GL_DEPTH_TEST);
 
-    Renderer renderer = Renderer();
-
     assistentWindowSetup(window);
 
+    Renderer renderer = Renderer();
     RotatingMikasa rm = RotatingMikasa();
 
-
+    glfwSetCursorPosCallback(window, mouseCallback);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)){
 
         renderer.clear();
 
 
-        rm.main(renderer);
+        rm.main(renderer, camera);
 
         assistentFrameSetup(rm);
 
+        camera.keyboardProcessing(window);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
