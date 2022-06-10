@@ -1,2 +1,0 @@
-/usr/bin/ar qc libopengla.a CMakeFiles/opengla.dir/src/fileReader.cpp.o
-/usr/bin/ranlib libopengla.a
