@@ -3,6 +3,8 @@
 Camera::Camera(){
     using namespace glm;
     view = mat4(1.0f);
+    proj = glm::mat4(1.0f);
+    proj = perspective(glm::radians(45.0f), (float)1080/(float)680, 0.1f, 20.0f);
     Camera::pointingPos = vec3(0.0f, 0.0f, 2.0f);
     cameraPos = vec3(0.0f, 1.0f, -4.0f);
     upDir = vec3(0.0f, 1.0f, 0.0f);
@@ -33,6 +35,10 @@ void Camera::keyboardProcessing(GLFWwindow* window){
 
 glm::mat4 Camera::getViewMatrix() const{
     return glm::lookAt(cameraPos, cameraPos + pointingPos, upDir);
+}
+
+glm::mat4 Camera::getProjMatrix() const{
+    return proj;
 }
 
 void Camera::setPointingPosition(glm::vec3 pointingPos){

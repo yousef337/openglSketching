@@ -11,3 +11,10 @@
         glDrawElements(GL_TRIANGLES, vao.getIndexCount(), GL_UNSIGNED_INT, nullptr);
     }
 
+    void Renderer::drawTrinanglerElement(VAO vao, unsigned int shaderProgramId) const{
+        glBindVertexArray(vao.getVaoId());
+        glUseProgram(shaderProgramId);
+        glDrawElements(GL_TRIANGLES, vao.getIndexCount(), GL_UNSIGNED_INT, nullptr);
+    }
+
+

@@ -13,6 +13,8 @@
 #include "external/glm/vec4.hpp"
 #include "external/glm/mat4x4.hpp"
 #include "scences/RotatingMikasa.h"
+#include "scences/BlockProgram.h"
+#include "scences/LightSource.h"
 #include "scences/Program.h"
 #include "Camera.h"
 
@@ -85,7 +87,7 @@ void mouseCallback(GLFWwindow* window, double xpos, double ypos){
     lastMouseX = xpos;
     lastMouseY = ypos;
 
-    const float sensitivity = 0.1f;
+    const float sensitivity = 0.2f;
 
     xOffset *= sensitivity;
     yOffset *= sensitivity;
@@ -143,6 +145,8 @@ int main(void){
 
     Renderer renderer = Renderer();
     RotatingMikasa rm = RotatingMikasa();
+    LightSource ls = LightSource();
+    BlockProgram bp = BlockProgram(ls);
 
     glfwSetCursorPosCallback(window, mouseCallback);
     /* Loop until the user closes the window */
@@ -152,6 +156,8 @@ int main(void){
 
 
         rm.main(renderer, camera);
+        bp.main(renderer, camera);
+        ls.main(renderer, camera);
 
         assistentFrameSetup(rm);
 
