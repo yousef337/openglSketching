@@ -66,7 +66,9 @@ void assistentCleanSetup(){
     ImGui::DestroyContext();
 }
 
-Camera camera = Camera();
+float width = 1560;
+float height = 880;
+Camera camera = Camera(width, height);
 float lastMouseX = 0.0f;
 float lastMouseY = 0.0f;
 float yawAngle = 0.0f;
@@ -121,7 +123,7 @@ int main(void){
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1080, 680, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(width, height, "Hello World", NULL, NULL);
     if (!window){
         glfwTerminate();
         return -1;

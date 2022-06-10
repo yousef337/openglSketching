@@ -85,8 +85,8 @@ void BlockProgram::main(const Renderer renderer, const Camera camera){
 
             model = glm::rotate(model, glm::radians(0.0f) , glm::vec3 {1.0f, 1.0f, 1.0f});
 
-            model = glm::translate(model, glm::vec3 {3, 3, -1});
-            model = glm::scale(model, glm::vec3 {1, 1, 1});
+            model = glm::translate(model, glm::vec3 {6, 3, -15});
+            model = glm::scale(model, glm::vec3 {9, 1, 13});
 
             basic.addGlUniformMatrix4fv("modelMat", model);
             basic.addGlUniformMatrix4fv("viewMat", camera.getViewMatrix());
@@ -95,6 +95,8 @@ void BlockProgram::main(const Renderer renderer, const Camera camera){
             basic.addGlUniform4f("lightColor", lightSource.getLightColor());
             basic.addGlUniformMatrix4fv("lightModel", lightSource.getLightModel());
             basic.addGlUniform4f("lightPos", lightSource.getLightPos());
+
+            basic.addGlUniform4f("viewPos", glm::vec4{camera.getCameraPos(), 0.0f});
 
             renderer.drawTrinanglerElement(vao, basic.getProgramId());
 

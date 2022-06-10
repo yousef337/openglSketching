@@ -19,12 +19,12 @@ private:
     float lastFrame;
 
 public:
-    Camera();
+    Camera(float width, float hight);
     void setUpMouseHandler(GLFWwindow* window);
     void keyboardProcessing(GLFWwindow* window);
     glm::mat4 getViewMatrix() const;
     glm::mat4 getProjMatrix() const;
+    glm::vec3 getCameraPos() const;
     void setPointingPosition(glm::vec3 pointingPos);
-
 
 };
