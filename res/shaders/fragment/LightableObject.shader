@@ -4,10 +4,10 @@ layout (location = 0) out vec4 color;
 
 in vec4 normalVec;
 in vec4 fragPos;
+in vec2 textureCoord;
 
 struct Material {
-    vec4 ambient;
-    vec4 diffuse;
+    sampler2D diffuseMap;
     vec4 specular;
     float specShininess;
 }; 
@@ -34,23 +34,23 @@ uniform vec4 u_color;
 
 void main(){
     // Ambient light
-    vec4 ambientLight =  material.ambient * light.ambient;
+   vec4 ambientLight = vec4(texture(material.diffuseMap, textureCoord)) * light.ambient;
 
     // Diffuse light
-    vec4 norm = normalize(normalVec);
-    vec4 lightDir = normalize(lightPos - fragPos);
+   vec4 norm = normalize(normalVec);
+   vec4 lightDir = normalize(lightPos - fragPos);
 
-    float diff = max(dot(lightDir, norm), 0.0);
+   float diff = max(dot(lightDir, norm), 0.0);
 
-    vec4 diffuseLight = (diff * material.diffuse) * light.diffuse;
+   vec4 diffuseLight = (diff * vec4(texture(material.diffuseMap, textureCoord))) * light.diffuse;
 
-    // Specular Light
-    vec4 viewDir = normalize(viewPos - fragPos);
-    vec4 reflectedLightDir = reflect(-lightDir, norm);
+   // Specular Light
+   vec4 viewDir = normalize(viewPos - fragPos);
+   vec4 reflectedLightDir = reflect(-lightDir, norm);
 
-    float spec = pow(max(dot(viewDir, reflectedLightDir), 0), material.specShininess);
-    vec4 specularLight = material.specular * spec * light.specular;
+   float spec = pow(max(dot(viewDir, reflectedLightDir), 0), material.specShininess);
+   vec4 specularLight = material.specular * spec * light.specular;
 
-    color = (ambientLight + diffuseLight + specularLight) * u_color;
+   color = ambientLight + diffuseLight + specularLight;
 };
 

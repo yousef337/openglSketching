@@ -9,33 +9,33 @@ BlockProgram::BlockProgram(LightSource lightSource){
 
         float positoins[] = {
          //back                         // need to be verfied normals
-        0.0f, 0.0f, 1.0f,                0.0f, 0.0f, -1.0f,
-        -1.0f, 0.0f, 1.0f,              0.0f, 0.0f, -1.0f,
-        0.0f, -1.0f, 1.0f,               0.0f, 0.0f, -1.0f,
-        -1.0f, -1.0f, 1.0f,                0.0f, 0.0f, -1.0f,
+        0.0f, 0.0f, 1.0f,     1.0f, 1.0f,           0.0f, 0.0f, -1.0f,
+        -1.0f, 0.0f, 1.0f,    0.0f, 1.0f,         0.0f, 0.0f, -1.0f,
+        0.0f, -1.0f, 1.0f,    1.0f, 0.0f,         0.0f, 0.0f, -1.0f,
+        -1.0f, -1.0f, 1.0f,   0.0f, 0.0f,          0.0f, 0.0f, -1.0f,
 
         //Right
-        0.0f, 0.0f, 2.0f,                 1.0f, 0.0f, 0.0f,
-        0.0f, -1.0f, 2.0f,                1.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, 2.0f,      0.0f, 1.0f,            1.0f, 0.0f, 0.0f,
+        0.0f, -1.0f, 2.0f,     0.0f, 0.0f,           1.0f, 0.0f, 0.0f,
 
         //front
-        0.0f, 0.0f, 2.0f,                  0.0f, 0.0f, 1.0f,
-        -1.0f, 0.0f, 2.0f,                0.0f, 0.0f, 1.0f,
-        0.0f, -1.0f, 2.0f,                 0.0f, 0.0f, 1.0f,
-        -1.0f, -1.0f, 2.0f,                  0.0f, 0.0f, 1.0f,
+        0.0f, 0.0f, 2.0f,      1.0f, 1.0f,            0.0f, 0.0f, 1.0f,
+        -1.0f, 0.0f, 2.0f,     0.0f, 1.0f,           0.0f, 0.0f, 1.0f,
+        0.0f, -1.0f, 2.0f,     1.0f, 0.0f,            0.0f, 0.0f, 1.0f,
+        -1.0f, -1.0f, 2.0f,    0.0f, 0.0f,              0.0f, 0.0f, 1.0f,
 
         // upper
-        0.0f, 0.0f, 2.0f,                0.0f, 1.0f, 0.0f,
-        -1.0f, 0.0f, 1.0f,                 0.0f, 1.0f, 0.0f,
-        -1.0f, 0.0f, 2.0f,                    0.0f, 1.0f, 0.0f,
+        0.0f, 0.0f, 2.0f,    1.0f, 0.0f,            0.0f, 1.0f, 0.0f,
+        -1.0f, 0.0f, 1.0f,   0.0f, 1.0f,              0.0f, 1.0f, 0.0f,
+        -1.0f, 0.0f, 2.0f,   0.0f, 0.0f,               0.0f, 1.0f, 0.0f,
 
         //left
-        -1.0f, 0.0f, 2.0f,             -1.0f, 0.0f, 0.0f,
-        -1.0f, -1.0f, 2.0f,            -1.0f, 0.0f, 0.0f,
+        -1.0f, 0.0f, 2.0f,     1.0f, 1.0f,          -1.0f, 0.0f, 0.0f,
+        -1.0f, -1.0f, 2.0f,     1.0f, 0.0f,        -1.0f, 0.0f, 0.0f,
 
         //bottom
-         0.0f, -1.0f, 2.0f,              0.0f, -1.0f, 0.0f,
-        -1.0f, -1.0f, 2.0f,             0.0f, -1.0f, 0.0f,
+         0.0f, -1.0f, 2.0f,   1.0f, 1.0f,           0.0f, -1.0f, 0.0f,
+        -1.0f, -1.0f, 2.0f,   0.0f, 1.0f,          0.0f, -1.0f, 0.0f,
 
     };
 
@@ -55,11 +55,16 @@ BlockProgram::BlockProgram(LightSource lightSource){
     VBO vbo = VBO();
     vbo.setData(positoins, sizeof(positoins), GL_STATIC_DRAW);
 
-    VertexLayout vertexLayout = VertexLayout(0, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float), 0);
+    VertexLayout vertexLayout = VertexLayout(0, 3, GL_FLOAT, GL_FALSE, 8*sizeof(float), 0);
     vbo.attributePointer(vertexLayout);
 
-    VertexLayout vertexLayoutNorm = VertexLayout(1, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float), (void*) (3 * sizeof(float)));
+    VertexLayout vertexLayoutNorm = VertexLayout(1, 3, GL_FLOAT, GL_FALSE, 8*sizeof(float), (void*) (5 * sizeof(float)));
     vbo.attributePointer(vertexLayoutNorm);
+
+
+    VertexLayout vertexLayoutTextureCords = VertexLayout(2, 2, GL_FLOAT, GL_FALSE, 8*sizeof(float), (void*) (3 * sizeof(float)));
+    vbo.attributePointer(vertexLayoutTextureCords);
+
 
     IndexBuffer indexedBuffer = IndexBuffer(indexedPositions, sizeof(indexedPositions), GL_STATIC_DRAW);
     indexedBuffer.bindToVAO(vao.getVaoId());
@@ -79,6 +84,11 @@ BlockProgram::BlockProgram(LightSource lightSource){
     glm::vec4 ambientLightSource {1.0f, 1.0f, 1.0f, 1.0f};
     basic.addGlUniform4f("lightColor", ambientLightSource);
 
+    //---- Texture
+
+    texture = Texture(Image("../res/textures/brick.jpg"));
+    basic.addGlUniform1i("material.diffuseMap", texture);
+
 }
 
 void BlockProgram::main(const Renderer renderer, const Camera camera){
@@ -95,9 +105,9 @@ void BlockProgram::main(const Renderer renderer, const Camera camera){
             basic.addGlUniformMatrix4fv("viewMat", camera.getViewMatrix());
             basic.addGlUniformMatrix4fv("projMat", camera.getProjMatrix());
 
-            basic.addGlUniform4f("material.ambient", glm::vec4(0.1f, 0.2f, 0.1f, 1.0f));
-            basic.addGlUniform4f("material.diffuse", glm::vec4(0.7f, 0.5f, 0.6f, 1.0f));
-            basic.addGlUniform4f("material.specular", glm::vec4(0.8f, 0.6f, 0.5f, 1.0f));
+            //basic.addGlUniform4f("material.ambient", glm::vec4(0.1f, 0.2f, 0.1f, 1.0f));
+            //basic.addGlUniform4f("material.diffuse", glm::vec4(0.7f, 0.5f, 0.6f, 1.0f));
+            basic.addGlUniform4f("material.specular", glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
             basic.addGLUniform1f("material.specShininess", 32);
 
             
@@ -112,7 +122,7 @@ void BlockProgram::main(const Renderer renderer, const Camera camera){
 
             basic.addGlUniform4f("viewPos", glm::vec4{camera.getCameraPos(), 0.0f});
 
-            renderer.drawTrinanglerElement(vao, basic.getProgramId());
+            renderer.drawTrinanglerElement(vao, basic.getProgramId(), texture.getTexturId());
 
         }
 

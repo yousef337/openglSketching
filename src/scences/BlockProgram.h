@@ -19,6 +19,7 @@ private:
     LightSource lightSource;
     ShaderProgram basic;
     VAO vao;
+    Texture texture;
 
     float x;
     float y;

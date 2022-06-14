@@ -8,6 +8,7 @@
         glBindVertexArray(vao.getVaoId());
         glUseProgram(shaderProgramId);
         glBindTexture(GL_TEXTURE_2D, texturId);
+        glActiveTexture(GL_TEXTURE0);
         glDrawElements(GL_TRIANGLES, vao.getIndexCount(), GL_UNSIGNED_INT, nullptr);
     }
 
