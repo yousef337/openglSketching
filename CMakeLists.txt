@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.0)
 
 project(opengl)
 
+include(CTest)
+enable_testing()
+
 set (source_dir "${PROJECT_SOURCE_DIR}")
 
 
@@ -27,3 +30,8 @@ target_link_libraries(opengl OpenGL::GL)
 
 find_package(GLEW REQUIRED)
 target_link_libraries(opengl GLEW::GLEW)
+
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)

@@ -28,6 +28,9 @@ public:
     glm::mat4 getLightModel();
     glm::vec4 getLightPos();
     glm::vec4 getLightColor();
+    glm::vec4 getAmbientColor();
+    glm::vec4 getDiffuseColor();
+    glm::vec4 getSpecularColor();
     ~LightSource();
 };
 

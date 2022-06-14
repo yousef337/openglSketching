@@ -109,6 +109,19 @@ glm::vec4 LightSource::getLightPos(){
     return lightPos;
 }
 
+glm::vec4 LightSource::getAmbientColor(){
+    return glm::vec4(0.1, 0.17, 0.13, 1.0);
+}
+
+glm::vec4 LightSource::getDiffuseColor(){
+    return glm::vec4(0.7, 0.6, 0.8, 1.0);
+
+}
+
+glm::vec4 LightSource::getSpecularColor(){
+    return glm::vec4(0.6, 0.42, 0.54, 1.0);
+
+}
 
 
 void LightSource::imGui(){

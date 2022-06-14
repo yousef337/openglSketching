@@ -25,6 +25,7 @@ public:
 
     void addGlUniform1i(const char* name, const Texture& texture);
 
+    void addGLUniform1f(const char* name, const float value);
 
     void addGlUniformMatrix4fv(const char* name, const glm::mat4& matrix);
 

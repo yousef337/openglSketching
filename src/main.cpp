@@ -45,7 +45,7 @@ void assistentWindowSetup(GLFWwindow* window){
 
 }
 
-void assistentFrameSetup(RotatingMikasa program){
+void assistentFrameSetup(Program program){
     // Start the Dear ImGui frame
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
@@ -68,7 +68,7 @@ void assistentCleanSetup(){
 
 float width = 1560;
 float height = 880;
-Camera camera = Camera(width, height);
+Camera camera = Camera(width-100, height-100);
 float lastMouseX = 0.0f;
 float lastMouseY = 0.0f;
 float yawAngle = 0.0f;
@@ -161,7 +161,7 @@ int main(void){
         bp.main(renderer, camera);
         ls.main(renderer, camera);
 
-        assistentFrameSetup(rm);
+        //assistentFrameSetup(rm);
 
         camera.keyboardProcessing(window);
 

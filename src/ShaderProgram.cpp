@@ -8,12 +8,19 @@
         return programId;
     }
 
-    void  ShaderProgram::addShader(const Shader& shader){
+    void ShaderProgram::addShader(const Shader& shader){
         glAttachShader(programId, shader.getShaderId());
     }
 
-    void  ShaderProgram::linkProgram(){
+    void ShaderProgram::linkProgram(){
         glLinkProgram(programId);
+    }
+
+    void ShaderProgram::addGLUniform1f(const char* name, const float value){
+        glUseProgram(programId);
+        glUniform1f(glGetUniformLocation(programId, name), value);
+        glUseProgram(0);
+
     }
 
     void  ShaderProgram::addGlUniform4f(const char* name, const glm::vec4& vec){

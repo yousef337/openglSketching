@@ -20,6 +20,10 @@ private:
     ShaderProgram basic;
     VAO vao;
 
+    float x;
+    float y;
+    float z;
+
 public:
     BlockProgram(LightSource lightSource);
     void main(const Renderer renderer, const Camera camera) override;

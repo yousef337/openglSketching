@@ -1,3 +1,4 @@
 libs/
 build/
 .kdev4/
+.vscode/

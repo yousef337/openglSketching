@@ -120,19 +120,6 @@ void RotatingMikasa::main(const Renderer renderer, const Camera camera){
 
         r += inc;
 
-
-        {
-                // Start the Dear ImGui frame
-    ImGui_ImplOpenGL3_NewFrame();
-    ImGui_ImplGlfw_NewFrame();
-    ImGui::NewFrame();
-
-    imGui();
-        // Rendering
-    ImGui::Render();
-    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-        }
-
 }
 
 
