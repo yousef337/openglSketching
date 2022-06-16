@@ -116,9 +116,16 @@ void BlockProgram::main(const Renderer renderer, const Camera camera){
             basic.addGlUniform4f("light.specular", lightSource.getSpecularColor());
 
 
+            
+            basic.addGLUniform1f("light.constantTerm", 0.1f);
+            basic.addGLUniform1f("light.linearTerm", 0.03f);
+            basic.addGLUniform1f("light.quadraticTerm", 0.02f);
+
+
+
             basic.addGlUniform4f("lightColor", lightSource.getLightColor());
             basic.addGlUniformMatrix4fv("lightModel", lightSource.getLightModel());
-            basic.addGlUniform4f("lightPos", lightSource.getLightPos());
+            basic.addGlUniform4f("light.lightPos", lightSource.getLightPos());
 
             basic.addGlUniform4f("viewPos", glm::vec4{camera.getCameraPos(), 0.0f});
 
