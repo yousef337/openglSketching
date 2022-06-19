@@ -31,6 +31,9 @@ target_link_libraries(opengl OpenGL::GL)
 find_package(GLEW REQUIRED)
 target_link_libraries(opengl GLEW::GLEW)
 
+find_package(assimp CONFIG REQUIRED)
+target_link_libraries(opengl assimp::assimp)
+
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
