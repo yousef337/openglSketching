@@ -12,6 +12,7 @@
 #include "../external/glm/vec4.hpp"
 #include "../external/glm/mat4x4.hpp"
 #include "LightSource.h"
+#include "../ImagedTexture.h"
 
 class BlockProgram : public Program {
 
@@ -19,7 +20,7 @@ private:
     LightSource lightSource;
     ShaderProgram basic;
     VAO vao;
-    Texture texture;
+    ImagedTexture texture;
 
     float x;
     float y;

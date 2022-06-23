@@ -79,7 +79,7 @@ RotatingMikasa::RotatingMikasa() {
 
     //---- Texture
 
-    texture = Texture(Image("../res/textures/mikasa.jpg"));
+    texture = ImagedTexture(Image("../res/textures/mikasa.jpg"));
     basic.addGlUniform1i("s_texture", texture);
 
 }

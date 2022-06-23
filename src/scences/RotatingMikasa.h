@@ -7,7 +7,7 @@
 #include "../ShaderProgram.h"
 #include "../VBO.h"
 #include "../IndexBuffer.h"
-#include "../Texture.h"
+#include "../ImagedTexture.h"
 #include "../Renderer.h"
 #include "../Camera.h"
 #include "../external/glm/vec4.hpp"
@@ -21,7 +21,7 @@ private:
     float inc;
     ShaderProgram basic;
     VAO vao;
-    Texture texture;
+    ImagedTexture texture;
 
 public:
     RotatingMikasa();

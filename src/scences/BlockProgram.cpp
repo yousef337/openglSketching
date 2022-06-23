@@ -86,7 +86,7 @@ BlockProgram::BlockProgram(LightSource lightSource){
 
     //---- Texture
 
-    texture = Texture(Image("../res/textures/brick.jpg"));
+    texture = ImagedTexture(Image("../res/textures/brick.jpg"));
     basic.addGlUniform1i("material.diffuseMap", texture);
 
 }

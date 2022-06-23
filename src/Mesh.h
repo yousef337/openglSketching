@@ -11,17 +11,12 @@
 #include "VertexLayout.h"
 #include "Renderer.h"
 #include "IndexBuffer.h"
+#include "Texture.h"
 
 struct Vertex {
     glm::vec4 positions;
     glm::vec4 normals;
     glm::vec4 textureCords;
-};
-
-//#TOBE SUBSTITUTED BY TEXTURE CLASS
-struct Texture {
-    unsigned int id;
-    std::string type;
 };
 
 class Mesh {
