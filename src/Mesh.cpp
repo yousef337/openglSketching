@@ -31,9 +31,30 @@ void Mesh::setupMesh(){
 
 }
 
-//#TODO complete the draw method
-void Mesh::Draw(const Shader &shader){
 
+void Mesh::draw(ShaderProgram &shaderProgram, Renderer renderer){
+
+    unsigned int diffuse = 1;
+    unsigned int specular = 1;
+
+    for (int i = 0; i < textures.size(); i++){
+
+        glActiveTexture(GL_TEXTURE0 + textures[i].getOffset());
+        glBindTexture(GL_TEXTURE_2D, textures[i].getTexturId());
+
+        unsigned int number = 0;
+
+        if (textures[i].getType() == "diffuse"){
+            number = diffuse++;
+        }else if (textures[i].getType() == "specular"){
+            number = specular++;
+        }
+
+        shaderProgram.addGlUniform1i(("textures." + textures[i].getType() + std::to_string(number)).c_str(), textures[i]);
+
+    }
+
+    renderer.drawTrinanglerElement(vao, shaderProgram.getProgramId());
 
 
 }

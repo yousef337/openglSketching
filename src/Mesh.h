@@ -5,7 +5,7 @@
 #include "external/glm/vec4.hpp"
 #include "external/glm/mat4x4.hpp"
 #include <string>
-#include "Shader.h"
+#include "ShaderProgram.h"
 #include "VAO.h"
 #include "VBO.h"
 #include "VertexLayout.h"
@@ -35,6 +35,6 @@ private:
 
 public:
     Mesh(const std::vector<Vertex> &verticies, const std::vector<unsigned int> &indexedPositions, const std::vector<Texture> &textures );
-    void Draw(const Shader &shader);
+    void draw(ShaderProgram &shaderProgram, Renderer renderer);
 
 };

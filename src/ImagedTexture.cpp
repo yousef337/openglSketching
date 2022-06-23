@@ -1,22 +1,19 @@
 #include "ImagedTexture.h"
 
 
-    ImagedTexture::ImagedTexture(const Image img, const unsigned int offset): imgTexture(img){
-        glGenTextures(1, &textureId);
-        this->offset = offset;
+    ImagedTexture::ImagedTexture(const Image img, const unsigned int offset): Texture(offset), imgTexture(img){
         this->imgTexture = img;
         setUpTexture();
         updateImage();
     }
 
-    ImagedTexture::ImagedTexture() : imgTexture(""){
-        this->offset = 0;
+    ImagedTexture::ImagedTexture() : Texture(0), imgTexture(""){
     }
 
 
     void ImagedTexture::setUpTexture() {
-        glBindTexture(GL_TEXTURE_2D, textureId);
-        glActiveTexture(GL_TEXTURE0 + offset);
+        glBindTexture(GL_TEXTURE_2D, getTexturId());
+        glActiveTexture(GL_TEXTURE0 + getOffset());
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
@@ -28,7 +25,7 @@
 
 
     void ImagedTexture::updateImage(){
-        glBindTexture(GL_TEXTURE_2D, textureId);
+        glBindTexture(GL_TEXTURE_2D, getTexturId());
 
         if (imgTexture.getImgData()){
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, imgTexture.getWidth(), imgTexture.getHeight(), 0, GL_RGB, GL_UNSIGNED_BYTE, imgTexture.getImgData());
@@ -37,12 +34,4 @@
 
         glBindTexture(GL_TEXTURE_2D, 0);
 
-    }
-
-    unsigned int ImagedTexture::getOffset() const {
-        return offset;
-    }
-
-    unsigned int ImagedTexture::getTexturId() const {
-        return textureId;
     }

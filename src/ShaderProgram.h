@@ -17,7 +17,7 @@ public:
 
     ShaderProgram();
 
-    unsigned int getProgramId();
+    unsigned int getProgramId() const;
     void addShader(const Shader& shader);
     void linkProgram();
 

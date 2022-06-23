@@ -4,7 +4,7 @@
         programId = glCreateProgram();
     }
 
-    unsigned int  ShaderProgram::getProgramId(){
+    unsigned int  ShaderProgram::getProgramId() const{
         return programId;
     }
 

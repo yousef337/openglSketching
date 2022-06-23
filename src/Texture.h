@@ -13,9 +13,10 @@ private:
 
 public:
 
-    virtual unsigned int getOffset() const {};
-
-    virtual unsigned int getTexturId() const {};
+    Texture(const unsigned int offset);
+    unsigned int getOffset() const;
+    unsigned int getTexturId() const;
+    std::string getType() const;
     virtual ~Texture() {};
 
 };
