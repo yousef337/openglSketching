@@ -20,6 +20,8 @@ void Mesh::setupMesh(){
     vbo.setData(&verticies[0], verticies.size()*sizeof(Vertex), GL_STATIC_DRAW);
 
     indiciesBuffer.setData(&indicies[0], indicies.size()*sizeof(unsigned int), GL_STATIC_DRAW);
+    indiciesBuffer.bindToVAO(vao.getVaoId());
+    vao.setIndexCount(indicies.size());
 
     VertexLayout positions = VertexLayout(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*) 0);
     VertexLayout normals = VertexLayout(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*) offsetof(Vertex, normals));
